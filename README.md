@@ -69,3 +69,37 @@ You can also access the interactive API documentation at http://localhost:8000/d
 - Handles large code snippets by chunking them into manageable pieces
 - REST API for integration with other applications
 - Interactive API documentation with Swagger UI
+
+## Project Background
+
+This project was designed as a 1-hour coding interview prep for an AI Product Engineer role at Foam. The challenge incorporates key skills relevant to working with LLMs, prompt engineering, and backend systems.
+
+### Challenge Objective
+
+Build a function that takes a code snippet (as a string) and identifies common bugs—like uninitialized variables or infinite loops—using an LLM integrated via LangChain. The system leverages prompt chaining to first analyze the code and then suggest fixes, mimicking Foam's "IQ" product.
+
+### Key Features of the Challenge
+
+- **Input**: A string representing a code snippet (e.g., Python code, 10-50 lines)
+- **Bug Detection**: Identify at least two types of bugs:
+  - Uninitialized variables (e.g., using a variable before assignment)
+  - Infinite loops (e.g., a while loop with no exit condition)
+- **LLM Integration**: Uses OpenAI (e.g., gpt-4) or Anthropic (e.g., claude-3) via their API to analyze the code
+- **Prompt Chaining**: Uses LangChain to create a two-step process:
+  - Step 1: Detect potential bugs and explain them
+  - Step 2: Suggest fixes based on the detected bugs
+- **Chunking Strategy**: If the code exceeds a certain length, splits it into manageable chunks for the LLM while preserving context
+- **Output**: Returns a structured response with:
+  - List of detected bugs (type and location)
+  - Suggested fixes for each bug
+
+### Tech Stack
+
+- **Language**: Python
+- **Libraries**:
+  - langchain for prompt chaining
+  - openai SDK for LLM calls
+  - Basic Python string handling for chunking
+- **LLM**: OpenAI's models (gpt-4 or gpt-3.5-turbo)
+
+The implementation focuses on creating a simple yet effective solution that demonstrates understanding of LLMs, prompt engineering, and practical application development.
