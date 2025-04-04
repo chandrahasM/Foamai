@@ -1,0 +1,11 @@
+openai
+langchain
+langchain_core
+langchain_openai
+numpy
+pyyaml
+requests
+python-dotenv
+fastapi
+uvicorn
+pydantic
