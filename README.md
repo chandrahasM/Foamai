@@ -70,9 +70,6 @@ You can also access the interactive API documentation at http://localhost:8000/d
 - REST API for integration with other applications
 - Interactive API documentation with Swagger UI
 
-## Project Background
-
-This project was designed as a 1-hour coding interview prep for an AI Product Engineer role at Foam. The challenge incorporates key skills relevant to working with LLMs, prompt engineering, and backend systems.
 
 ### Challenge Objective
 
